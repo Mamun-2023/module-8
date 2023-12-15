@@ -21,3 +21,49 @@ img{
     grid-template-columns: repeat(2 ,1fr);
     gap: 5px;
 }
+/* another practice */
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px) 50px 50px;
+}
+#box-1{
+  grid-row: span 5; 
+}
+#box-11, #box-12{
+    grid-column: span 3;
+}
+.box{
+background-color:cadetblue;
+    
+}
+
+
+
+@media screen and (max-width:576px) {
+
+.row {
+        height: auto;
+        flex-direction: column;
+    }
+    .square{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:576px) and (max-width:999px) 
+{
+.row {
+        height: auto;
+        flex-direction: column;
+    }
+    
+ .square{
+grid-template-columns: 1fr;
+ }   
+}
+    
+    
+    
+    
+    
